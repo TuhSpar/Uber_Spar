@@ -22,7 +22,7 @@ nav
     border-right: 2px dotted black
     padding-right: 26px
 
-header
+.header
   position: relative
 
 .subheader
@@ -283,27 +283,33 @@ header
       cursor: pointer
 
 .car
-  min-height: 898px
+  display: block
+  margin: 0 auto
+  height: 800px
+  width: 1920px
+  background-color: black
   .black
-    position: relative
-    background-color: #070716
-    min-width: 1920px
-    min-height: 500px
+    height: 500px
+    width: 100%
+    display: block
     margin: 0 auto
-    padding-top: 59px
+    position: relative
+    min-width: 100%
     z-index: 1
+    padding-top: 55px
     .label
       margin: 0 auto
       height: 24px
       line-height: height
       width: 112px 
-      padding-top: 5px 10px
-      background-color: #FFFFFF
-      color: #070716
+      padding: 5px 12px
+      background-color: #ffffff
+      color: black
       font-size: 11px
       font-weight: 300
       text-transform: uppercase
       text-align: center
+      
     .title
       display: block
       font-weight: 900
@@ -312,47 +318,52 @@ header
       font-size: 38px
       margin-top: 33px
       text-transform: uppercase
-      color: #FFFFFF
+      color: #ffffff
     .subtitle
-      font-weight: 300
+      display: block
+      margin-top: 19px
+      font-weight: 400
       font-size: 17px
       text-align: center
-      color: #FFFFFF
+      color: #ffffff
     .car_img
+      width: 759
       position: absolute
-      display: block
-      margin: 0 auto
-      width: 759px
-      height: 480px
-      z-index: 2
-      top: 470px
+      top: 94.3%
       left: 50%
-      transform: translate( -50%, -50% )
-  &_desc
-    background: url(../img/Choice/under.png)
+      transform: translate(-50%, -50%)
+      z-index: 2
+      img
+        width: 100%
+  .whiteground
     position: relative
-    height: 400px
-    min-width: 1920px 
-    z-index: 
+    display: flex
+    justify-content: center
+    align-items: center
+  
     p
       position: absolute
-      display: block
-      font-weight: 400
+      left: 50%
+      top: 50%
+      transform: translate(-50%, )
+      font-weight: 300
       font-size: 17px
       line-height: 24px
       text-align: center
-      color: black
-      top: 50%
-      left: 50%
-      transform: translate( -50%, -50% )
+      color: #222222
       z-index: 2
-    
+
+
  
 .contributions
   height: 900px
   width: 1920px
   margin: 0 auto
   background-color: black
+  .white
+    width: 200px
+    height: 200px
+    background-color: white
 
 
 
