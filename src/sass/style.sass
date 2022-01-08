@@ -4,6 +4,15 @@
 nav
   height: 50px
   background: #212121
+  transition: 2s
+  &:hover
+      background-color: black
+      .menu_item
+        border-color: #C0C0C0
+      .menu_link
+        font-size: 15.05px
+
+        
 
 .menu
   display: flex
@@ -11,16 +20,21 @@ nav
   padding: 13px 70px
   margin: 0
   list-style-type: none
+  
 
   .menu_link
     color: #FFFFFF
     font-size: 15px
     font-weight: 300
     text-decoration: none
+    transition: 0.5s
+    
 
   .menu_item
     border-right: 2px dotted black
     padding-right: 42px
+    transition: 0.5s
+    
   .menu_item_1
     border-right: none
     padding-right: none 
@@ -83,7 +97,7 @@ nav
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
     &:hover
       background-image: none
-      border-color: #1eacc7
+      background-color: #1eacc7
       
     
        
@@ -387,11 +401,10 @@ nav
       color: black
       z-index: 2
 
-.require
+.req
   min-height: 900px
   background-color: #F2F2F2 
   padding: 68px 0 84px 0
-
   &_label
     margin: 0 auto
     height: 24px
@@ -413,8 +426,65 @@ nav
     margin-top: 33px
     text-transform: uppercase
     color: black
+  &_block
+    margin: 33px 0 33px 0
+    width: 700px
+    &_nmb
+      margin-bottom: 0
+  &_title
+    height: 24px
+    font-weight: 400
+    font-size: 22px
+    line-height: 24px
+    color: #1CA8C3
+    &_red
+      color: #FF5656
+  &_list
+    list-style-type: none
+    padding-left: 50px
+    margin-top: 22px
+    li
+      display: block
+      position: relative
+      font-size: 17px
+      font-weight: 300
+      line-height: 24px
+      margin-bottom: 14px
+      &::before
+        content: ""
+        display: inline-block
+        vertical-align: middle
+        position: absolute
+        left: -22px
+        transform: translate(-24%, 3px) 
+        width: 18px
+        height: 18px
+        background: url('../icons/conditions&requirements/check_blue.svg') center (center / cover) no-repeat
+    li.red
+      display: block
+      position: relative
+      font-size: 17px
+      font-weight: 300
+      line-height: 24px
+      margin-bottom: 14px
+      &::before
+        content: ""
+        display: inline-block
+        vertical-align: middle
+        position: absolute
+        left: -22px
+        transform: translate(-24%, 3px) 
+        width: 18px
+        height: 18px
+        background: url('../icons/conditions&requirements/check_red.svg') center (center / cover) no-repeat
 
-  
+
+  &_descr
+    font-weight: 300
+    font-size: 17px
+    line-height: 24px
+    color: #1CA8C3
+
 
 
 
